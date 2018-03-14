@@ -1,0 +1,23 @@
+{
+  "name": "spaces_plus_places",
+  "version": "1.0.0",
+  "description": "A Travel Itinerary React App",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyjulieh/spaces_plus_places.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyjulieh/spaces_plus_places/issues"
+  },
+  "homepage": "https://github.com/heyjulieh/spaces_plus_places#readme"
+}
