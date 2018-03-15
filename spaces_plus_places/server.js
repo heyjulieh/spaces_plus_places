@@ -14,7 +14,7 @@ var app = express(),
 
 // MLab : Mongoose Config
 var databaseUrl = process.env.MONGODB_URI;
-mongoose.createConnection(databaseUrl || 'mongodb://localhost/spacesplusplaces')
+mongoose.createConnection(databaseUrl || 'mongodb://heroku_7lgzwr0f:notmo6e4h3nb05g5of38s3rio@ds115219.mlab.com:15219/heroku_7lgzwr0f')
 mongoose.Promise = global.Promise;
 
 app.set("port", process.env.PORT || 3001);
