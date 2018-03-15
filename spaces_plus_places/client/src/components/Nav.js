@@ -98,7 +98,7 @@ class Nav extends Component {
               </ul>
               <ul className="nav navbar-nav navbar-right">
                 <li id="userName">Welcome, {this.state.currentUser && this.state.currentUser.displayName}</li>
-                <li><a onClick={this.logoutButtonClicked}>Log Out</a></li>
+                <li><a className="log" onClick={this.logoutButtonClicked}>Log Out</a></li>
               </ul>
             </div>
           </div>
@@ -127,7 +127,7 @@ class Nav extends Component {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li id="userName">{this.state.currentUser && this.state.currentUser.displayName}</li>
-              <a onClick={this.loginButtonClicked}><li>Login</li></a>
+              <li><a className="log" onClick={this.loginButtonClicked}>Login</a></li>	
             </ul>
           </div>
         </div>

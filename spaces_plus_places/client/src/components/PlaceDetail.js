@@ -109,7 +109,7 @@ class PlaceDetail extends Component {
               </div>
               <div className="placeInfo col-xs-12 col-sm-7 col-md-8">
                   <h3 className="placeName">{this.props.place.placeName}</h3>
-                  <h5 className="placeCity">{this.props.city}</h5>
+                  <h5 className="placeCity">{this.props.neighborhood}, {this.props.city}</h5>
                   <p className="placeUser">by {this.props.place.user}</p>
                   <p className="placeDescription">{this.props.place.description}</p>
                   <h6 className="placeDate">Visited on: {new Date(this.props.place.visitDate).toDateString()}</h6>
@@ -122,28 +122,28 @@ class PlaceDetail extends Component {
                ? (<div className="container">
                 <div className="form-group row">
                   <form className="cityList-form" onSubmit={ this.handleUpdatePlace }>
-                    <input
+                    Name: <input
                       className='form-control'
                       type='text'
                       name='placeName'
                       placeholder={ this.state.placeName}
                       value={ this.state.placeName }
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Activity Type: <input
                       className='form-control'
                       type='text'
                       name='type'
                       placeholder={ this.state.type}
                       value={ this.state.type}
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Neighborhood: <input
                       className='form-control'
                       type='text'
                       name='neighborhood'
                       placeholder={ this.state.neighborhood}
                       value={ this.state.neighborhood }
                       onChange={ this.handleInputChange } /><br></br>
-                    <textarea
+                    Description: <textarea
                       className='form-control'
                       rows='8'
                       type='text'
@@ -151,28 +151,28 @@ class PlaceDetail extends Component {
                       placeholder={ this.state.description }
                       value={ this.state.description }
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Priority of Visit: <input
                       className='form-control'
                       type='text'
                       name='priority'
                       placeholder={ this.state.priority}
                       value={ this.state.priority}
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Rating of Visit: <input
                       className='form-control'
                       type='text'
                       name='rating'
                       placeholder={ this.state.rating}
                       value={ this.state.rating}
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Date of Visit: <input
                       className='form-control'
                       type='text'
                       name='visitDate'
                       placeholder={ this.state.visitDate}
                       value={ this.state.visitDate}
                       onChange={ this.handleInputChange } /><br></br>
-                    <input
+                    Image: <input
                       className='form-control'
                       type='text'
                       name='placeIMG'
@@ -199,7 +199,7 @@ class PlaceDetail extends Component {
             </div>
             <div className="placeInfo col-xs-12 col-sm-7 col-md-8">
               <h3 className="placeName">{this.props.place.placeName}</h3>
-              <h5 className="placeCity">{this.props.city}</h5>
+              <h5 className="placeCity">{this.props.neighborhood}, {this.props.city}</h5>
               <p className="placeUser">by {this.props.place.user}</p>
               <p className="placeDescription">{this.props.place.description}</p>
               <h6 className="placeDate">Visited on: {new Date(this.props.place.visitDate).toDateString()}</h6>

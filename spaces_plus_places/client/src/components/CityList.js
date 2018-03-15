@@ -15,7 +15,7 @@ class CityList extends Component {
 		return(
 			<div className="citiesGrid container-fluid">
 				<div className="row">
-					<h1>Cities</h1>
+					<h1>Discover these cities</h1>
 					{citiesArray}
 				</div>
 			</div>

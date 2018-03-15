@@ -19,7 +19,7 @@ class Hero extends Component {
 				</video>
 				<div id="welcometext">
 					<h1>Spaces + Places</h1>
-					<p>Sharing our travel plans for all the<br/>great spaces and places<br/>around the world, one city at a time.</p>
+					<p>Sharing my travel plans and experiences<br/>for all the great spaces and places<br/>around the world, one city at a time.</p>
 				</div>
 			</div>
 		)

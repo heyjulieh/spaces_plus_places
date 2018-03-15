@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Halant:300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 body {
   margin: 0;
@@ -11,11 +11,12 @@ body {
   background: white;
 }
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 40px;
     letter-spacing: 1px;
     color: black;
     text-transform: uppercase;
+    font-weight: 300;
 }
 h2 {
   font-family: 'Roboto', sans-serif;
@@ -37,7 +38,7 @@ h4 {
 
 h5 {
   font-family: 'Roboto';
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -54,9 +55,10 @@ footer a {
 }
 
 footer a:hover, footer a:active {
+  transition-duration: .6s;
   text-decoration: none;
-  color: darkgrey;
-  font-weight: 400;
+  color: black;
+  border-bottom: 1px solid black;
 }
 
 footer {
@@ -84,6 +86,7 @@ footer p {
   z-index: 0;
 }
 #footer-copyright {
+  font-size: 12px;
   color: grey;
 }
 .pull-left {
@@ -108,6 +111,7 @@ nav a, nav a:focus, nav a:visited , nav a:active {
 }
 
 nav a:hover{
+  transition-duration: .6s;
   background-color: transparent !important;
   color: black;
   opacity: 1;
@@ -141,6 +145,7 @@ p.navCity {
   padding-left: 20px;
 }
 a.cityLink:hover, p.navCity:hover {
+  transition-duration: .6s;
   text-decoration: none;
   color: black;
 }
@@ -156,24 +161,27 @@ a.cityLink:hover, p.navCity:hover {
   -webkit-box-shadow: 0px 0px 0px !important;
   box-shadow: 0px 0px 0px !important;
 }
-
 a.dropdown-toggle {
   color: white;
   background-color: #D55050 !important;
 }
-
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  transition-duration: .6s;
   border: 0;
   background-color: #D55050 !important;
   color: white !important;
 }
-
 .navbar-collapse {
   background-color: #D55050 !important;
 }
-
 .navbar-collapse > .navCity:hover {
+  transition-duration: .6s;
   color: white !important;
+}
+
+.log:hover {
+  transition-duration: .6s;
+  border-bottom: 1px solid black;
 }
 
 /* F O R M S */
@@ -188,6 +196,7 @@ a.dropdown-toggle {
   letter-spacing: 2px;
 }
 .btn-primary:hover {
+  transition-duration: .6s;
   background-color: black;
 }
 .btn-primary:active {
@@ -229,6 +238,12 @@ a.dropdown-toggle {
   border-bottom: 1px solid lightgrey;
   -webkit-box-shadow: 0px 0px 0px;
   box-shadow: 0px 0px 0px;
+}
+.form-control:focus {
+  background-color: #e6eef1;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  border-bottom: 1px solid lightgrey;
 }
 .formheader {
   display: inline-block;
@@ -293,6 +308,7 @@ div.citiesGrid {
   padding-top: 30px;
   padding-bottom: 80px;
   margin: auto;
+  text-align: left;
 }
 div.citiesGrid .row {
   height: 50vh;
@@ -304,12 +320,17 @@ div.cityCard {
 .citiesGrid h1 {
   padding-bottom: 40px;
   text-align: center;
+  font-size: 32px;
 }
 .cityCard img {
   width: 100%;
   object-fit: cover;
   padding: 5px;
   margin: 0;
+}
+.cityCard img:hover {
+  transition-duration: .8s;
+  opacity: .8;
 }
 .cityCard h3 {
   font-family: 'Roboto', sans-serif;
@@ -334,6 +355,11 @@ div.cityCard {
   border: 1px black;
   font-size: 14px;
 }
+.cityCardName:hover {
+  transition-duration: .8s;
+  width: 90%;
+  right: 5%;
+}
 
 /* P L A C E S */
 h1.cityTitle {
@@ -351,6 +377,7 @@ h1.cityTitle {
 .placeName {
   margin-top: 0;
   padding-top: 0;
+  letter-spacing: 1px;
 }
 .placeCard .row {
   margin-bottom: 50px;
@@ -361,8 +388,11 @@ h1.cityTitle {
   color: black;
 }
 .placeInfo a:hover {
-  color: #D55050;
+  transition-duration: .5s;
+  background-color: black;
+  color: white;
   text-decoration: none;
+  border: 1px solid black;
 }
 .placeCity {
   padding-bottom: 15px;
@@ -374,4 +404,7 @@ h1.cityTitle {
 .showPlace {
   display: inline-block;
   margin-top: 120px;
+}
+.placeUser {
+  font-style: italic;
 }

@@ -26,6 +26,21 @@ class CreatePlaceForm extends Component {
   	if (e.target.name === 'description') {
   		this.setState({ description: e.target.value });
   	}
+    if (e.target.name === 'type') {
+  		this.setState({ type: e.target.value });
+  	}
+    if (e.target.name === 'rating') {
+  		this.setState({ rating: e.target.value });
+  	}
+    if (e.target.name === 'priority') {
+  		this.setState({ priority: e.target.value });
+  	}
+    if (e.target.name === 'visitDate') {
+  		this.setState({ visitDate: e.target.value });
+  	}
+    if (e.target.name === 'neighborhood') {
+  		this.setState({ neighborhood: e.target.value });
+  	}
   }
 
   handleNewPlaceSubmit(e) {
@@ -112,7 +127,7 @@ class CreatePlaceForm extends Component {
             <input
               className='form-control'
               type='text'
-              name='raiting'
+              name='rating'
               placeholder='Rating of visit'
               value={ this.state.rating}
               onChange={ this.handleInputChange } /><br></br>
