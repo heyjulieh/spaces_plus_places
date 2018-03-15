@@ -7,7 +7,7 @@ body {
   font-weight: 300;
 }
 .wrapper {
-  height: 75vh;
+  min-height: 75vh;
   background: white;
 }
 h1 {
@@ -68,7 +68,6 @@ footer {
   font-weight: 200;
   padding: 10px;
   z-index: 0;
-  margin-top: 20px;
 }
 
 footer ul {
